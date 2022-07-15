@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+  imputeme:
+    build: .
+    ports:
+      - '3838:3838'
+    restart: always
+    volumes:
+      - .:/imputeme/code/impute-me/
